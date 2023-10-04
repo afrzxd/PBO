@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Payment {
 
-    static ArrayList<Order> orders = new ArrayList();
+    static ArrayList<Order> orders = new ArrayList<Order>();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -40,13 +40,13 @@ public class Payment {
 
         boolean ok;
         do {
-            System.out.print("Input nama tipe [ Cappucino, Latte, Americano]:");
+            System.out.print("Input nama tipe [ Cappucino, Latte, Americano]: ");
             tipe = sc.nextLine();
             ok = cekKopi(tipe);
         } while (ok == false);
 
         do {
-            System.out.print("Tambah Gula [Y / T]:");
+            System.out.print("Tambah Gula [Y / T]: ");
             gula = sc.nextLine();
             ok = cekGula(gula);
         } while (ok == false);
