@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import static java.lang.Math.abs;
 public class Payment {
 
     static ArrayList<Order> orders = new ArrayList<Order>();
@@ -127,7 +127,7 @@ public class Payment {
         } while (ok == false);
 
         orders.clear();
-        System.out.println("Kembalian: " + Math.abs(total - bayar));
+        System.out.println("Kembalian: " + abs(total - bayar));
         System.out.println("Successfully add new order!");
         System.out.println("Press enter to continue...");
 
